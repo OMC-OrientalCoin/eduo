@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>班车管理系统</title>
+    <link rel="stylesheet" href="//{{getHost}}/bus/prd/base@{{getVersion 'base.css'}}.css">
+    <link rel="stylesheet" href="//{{getHost}}/bus/prd/style@{{getVersion 'style.css'}}.css">
+  </head>
+  <body>
+    <div id="app"></div>
+    <script>
+      window.globalConfig = {
+        loginName: '{{req_.session.user.displayName}}',
+        //isAdmin: {{isAdmin req_.session.user.userName}},
+      }
+    </script>
+    <!-- built files will be auto injected -->
+    <script src="//{{getHost}}/bus/prd/manifest@{{getVersion 'manifest.js'}}.js"></script>
+    <script src="//{{getHost}}/bus/prd/vendor@{{getVersion 'vendor.js'}}.js"></script>
+    <script src="//{{getHost}}/bus/prd/main@{{getVersion 'main.js'}}.js"></script>
+  </body>
+</html>

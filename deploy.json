@@ -1,0 +1,13 @@
+{
+  "apps" : [
+      {
+          "name"      : "edou",
+          "script"    : "./bin/www",
+          "log_date_format": "YYYY-MM-DD HH:mm:ss",
+          "env": {
+              "NODE_ENV": "production"
+          },
+          "node-args": "--experimental-workers"
+      }
+  ]
+}

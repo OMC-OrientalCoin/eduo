@@ -1,0 +1,24 @@
+<header class="ws-header row-fluid">
+  <div class="span4">
+    <a href="/back/logoManage" class="ws-logo"><span class="s-logo"></span></a>
+  </div>
+  <div class="span20">
+    <ul class="top-nav">
+      <li><a href="/back/logoManage" {{#if atLogo}}class="current"{{/if}}>产品LOGO管理</a></li>
+      <li><a href="/back/materialManage" {{#if atMaterial}}class='current'{{/if}}>架构图素材管理</a></li>
+      <li><a href="/back/recordUpdate" {{#if atLog}}class='current'{{/if}}>更新记录</a></li>
+    </ul>
+    <div class="user-info">
+      <span class='user-logo'></span>
+      <span class='user-name'>{{req_.session.user.userName}}</span>
+      <span class='wsicon wsicon-down-arrow user-oper-btn'></span>
+      <span class='user-oper-div js-user-oper'>
+          <span class="wsicon wsicon-up-arrow u-arrow"></span>
+      <ul>
+        <!-- 用户操作 -->
+        <li><a href="/logout">退出</a></li>
+      </ul>
+      </span>
+    </div>
+  </div>
+</header>
